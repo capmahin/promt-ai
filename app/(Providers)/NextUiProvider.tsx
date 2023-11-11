@@ -5,8 +5,7 @@ interface ProviderProps{
     children: React.ReactNode;
 }
 
-function App() {
-  // 2. Wrap NextUIProvider at the root of your app
+export default function Provider({children}:ProviderProps) {
   return (
     <NextUIProvider>
       
