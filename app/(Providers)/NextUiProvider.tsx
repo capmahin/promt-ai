@@ -8,7 +8,7 @@ interface ProviderProps{
 export default function Provider({children}:ProviderProps) {
   return (
     <NextUIProvider>
-      
+      {children}
     </NextUIProvider>
   );
 }
