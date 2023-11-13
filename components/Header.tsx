@@ -20,7 +20,9 @@ const Header = (props: Props) => {
         <div className='hidden md:w-[90%] mx-auto md:flex items-center justify-between'>
              <div>
                 <Link href={"/"}>
-                    
+                    <h1 className='font-Inter text-3xl cursor-pointer'>
+                        <span>Bec</span>odemy
+                    </h1>
                 </Link>
              </div>
         </div>
