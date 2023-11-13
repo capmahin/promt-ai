@@ -21,7 +21,7 @@ const Header = (props: Props) => {
              <div>
                 <Link href={"/"}>
                     <h1 className='font-Inter text-3xl cursor-pointer'>
-                        <span>Bec</span>odemy
+                        <span className='text-[#64ff4c]'>Bec</span>odemy
                     </h1>
                 </Link>
              </div>
