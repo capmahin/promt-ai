@@ -29,7 +29,17 @@ const navItems=[
 
 const Navigation = (props: Props) => {
   return (
-    <div>Navigation</div>
+    <div className='block md:flex'>
+        {
+            navItems.map((item)=>(
+                <div key={item.title}>
+                    <h5>
+                        {item.title}
+                    </h5>
+                </div>
+            ))
+        }
+    </div>
   )
 }
 
