@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import Navigation from "./Navigation";
 
 type Props = {}
 
@@ -25,6 +26,11 @@ const Header = (props: Props) => {
                     </h1>
                 </Link>
              </div>
+             <div className='flex'>
+               
+             </div>
+
+
         </div>
     </div>
   )
