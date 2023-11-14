@@ -2,9 +2,11 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import Navigation from "./Navigation";
 
-type Props = {}
+type Props = {
+    activeItem: number;
+}
 
-const Header = (props: Props) => {
+const Header = ({activeItem}: Props) => {
    const [active, setactive] = useState(false);
 
    if(typeof window !== 'undefined'){
@@ -27,7 +29,7 @@ const Header = (props: Props) => {
                 </Link>
              </div>
              <div className='flex'>
-               
+               <Navigation activeItem = {activeItem} />
              </div>
 
 

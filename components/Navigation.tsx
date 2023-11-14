@@ -1,6 +1,8 @@
 import React from 'react'
 
-type Props = {}
+type Props = {
+    activeItem: number;
+}
 
 const Navigation = (props: Props) => {
   return (
