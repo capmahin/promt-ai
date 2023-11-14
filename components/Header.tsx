@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import Navigation from "./Navigation";
 import {AiOutlineSearch} from 'react-icons/ai';
+import {CgProfile} from 'react-icons/cg';
 
 type Props = {
     activeItem: number;
@@ -34,6 +35,10 @@ const Header = ({activeItem}: Props) => {
              </div>
               <div className="flex items-center ml-10">
                  <AiOutlineSearch  className="text-[25px] mr-5 cursor-pointer"/>
+                 {/* Todo Authentication */}
+                 <Link href="/sign-in">
+                    <CgProfile />
+                 </Link>
               </div>
 
         </div>
