@@ -33,7 +33,7 @@ const Navigation = (props: Props) => {
         {
             navItems.map((item)=>(
                 <div key={item.title}>
-                    <h5>
+                    <h5 className={`inline-block md:px-4 xl:px-8 py-5 md:py-0 text-[18px]`}>
                         {item.title}
                     </h5>
                 </div>
