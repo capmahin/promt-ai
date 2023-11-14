@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Navigation from "./Navigation";
 import {AiOutlineSearch} from 'react-icons/ai';
 import {CgProfile} from 'react-icons/cg';
+import {FaBars} from 'react-icons/fa';
 
 type Props = {
     activeItem: number;
@@ -10,6 +11,7 @@ type Props = {
 
 const Header = ({activeItem}: Props) => {
    const [active, setactive] = useState(false);
+   const [open,setOpen] = useState(false);
 
    if(typeof window !== 'undefined'){
     window.addEventListener('scroll', ()=>{
@@ -46,7 +48,19 @@ const Header = ({activeItem}: Props) => {
 
         {/* for mobile screen */}
         <div className='w-full md:hidden flex items-center justify-between'>
+            <div>
+                <Link href="/">
+                  <h1>
+                  <Link href={"/"}>
+                    <h1 className='font-Inter text-3xl cursor-pointer'>
+                        <span className='text-[#64ff4c]'>Bec</span>odemy
+                    </h1>
+                </Link>
+                    </h1>  
+                </Link>
+            </div>
 
+            <FaBars className="text-2xl cursor-pointer"  onClick={()=> setOpen(!open)}/>
         </div>
     </div>
   )
