@@ -60,7 +60,9 @@ const Header = ({activeItem}: Props) => {
                 </Link>
             </div>
 
-            <FaBars className="text-2xl cursor-pointer"  onClick={()=> setOpen(!open)}/>
+           <div>
+           <FaBars className="text-2xl cursor-pointer"  onClick={()=> setOpen(!open)}/>
+           </div>
         </div>
     </div>
   )
