@@ -31,7 +31,9 @@ const Header = ({activeItem}: Props) => {
              <div className='flex'>
                <Navigation activeItem = {activeItem} />
              </div>
+              <div className="flex items-center ml-10">
 
+              </div>
 
         </div>
     </div>
