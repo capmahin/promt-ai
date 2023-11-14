@@ -37,7 +37,7 @@ const Header = ({activeItem}: Props) => {
                  <AiOutlineSearch  className="text-[25px] mr-5 cursor-pointer"/>
                  {/* Todo Authentication */}
                  <Link href="/sign-in">
-                    <CgProfile />
+                    <CgProfile  className="text-[25px] cursor-pointer"/>
                  </Link>
               </div>
 
