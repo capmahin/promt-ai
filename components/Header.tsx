@@ -40,6 +40,12 @@ const Header = ({activeItem}: Props) => {
                     <CgProfile  className="text-[25px] cursor-pointer"/>
                  </Link>
               </div>
+            
+        </div>
+        {/* Todo */}
+
+        {/* for mobile screen */}
+        <div className='w-full md:hidden flex items-center justify-between'>
 
         </div>
     </div>
