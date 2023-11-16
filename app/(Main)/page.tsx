@@ -11,7 +11,7 @@ const Page = (props: Props) => {
     if(!isMounted){
       setIsMounted(true);
     }
-  }, [])
+  }, [isMounted]);
   
   return (
     <div>
