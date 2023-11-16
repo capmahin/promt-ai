@@ -78,7 +78,9 @@ const Header = ({activeItem}: Props) => {
                 id="screen"
                 >
                   <div className='fixed bg-black h-screen top-0 right-0 w-[60%] z-[9999]'>
-
+                    <div className='mt-20 p-5'>
+                        <Navigation activeItem={activeItem} />
+                    </div>
                   </div>
                 </div>
             )
