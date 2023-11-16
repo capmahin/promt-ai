@@ -25,6 +25,9 @@ const Header = ({activeItem}: Props) => {
 
    const handleClose = (e:React.MouseEvent) =>{
         const target = e.target as HTMLElement;
+        if(target.id === 'screen'){
+            setOpen(!open);
+        }
    }
 
   return (
