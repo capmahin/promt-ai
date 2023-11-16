@@ -77,7 +77,9 @@ const Header = ({activeItem}: Props) => {
                 onClick={handleClose}
                 id="screen"
                 >
-                  
+                  <div className='fixed bg-black h-screen top-0 right-0 w-[60%] z-[9999]'>
+
+                  </div>
                 </div>
             )
            }
