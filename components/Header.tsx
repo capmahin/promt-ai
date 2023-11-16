@@ -22,6 +22,11 @@ const Header = ({activeItem}: Props) => {
         }
     })
    }
+
+   const handleClose = (e:React.MouseEvent) =>{
+        const target = e.target as HTMLElement;
+   }
+
   return (
     <div className={`w-full p-5 border-b min-h-[60px] border-b-[#ffffff32] transition-opacity ${active && 'fixed top-0 left-0 bg-[#00000] z-[9999]'}`}>
         <div className='hidden md:w-[90%] mx-auto md:flex items-center justify-between'>
@@ -65,8 +70,11 @@ const Header = ({activeItem}: Props) => {
            </div>
            {
             open && (
-                <div className="fixed md:hidden w-full h-screen top-0 left-0 z-[99999]">
-
+                <div className="fixed md:hidden w-full h-screen top-0 left-0 z-[99999] bg-[unset]"
+                onClick={handleClose}
+                id="screen"
+                >
+                  
                 </div>
             )
            }
