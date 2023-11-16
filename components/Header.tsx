@@ -63,6 +63,13 @@ const Header = ({activeItem}: Props) => {
            <div>
            <FaBars className="text-2xl cursor-pointer"  onClick={()=> setOpen(!open)}/>
            </div>
+           {
+            open && (
+                <div className="fixed md:hidden w-full h-screen top-0 left-0 z-[99999]">
+
+                </div>
+            )
+           }
         </div>
     </div>
   )
