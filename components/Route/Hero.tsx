@@ -4,7 +4,9 @@ type Props = {}
 
 const Hero = (props: Props) => {
   return (
-    <div>Hero</div>
+    <div className='w-full md:min-h-screen flex items-center justify-between'>
+
+    </div>
   )
 }
 
