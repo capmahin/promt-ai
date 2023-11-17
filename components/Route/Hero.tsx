@@ -42,7 +42,20 @@ const Hero = (props: Props) => {
         </div>
         <div className='w-[100vw] mb:5 mb:mb-20 relative'>
             <div className='rotate-[-4deg] mt-10 md:mt-[6.5rem]'>
-                
+                <MarQuee>
+                  {
+                    rowOneImages.map((i,index)=>(
+                      <Image 
+                      src={i.url}
+                      key={index}
+                      alt=''
+                      className='md:m-4 w-[200px] m-2 md:w-[500px] rounded-[20px]'
+                      width={500}
+                      height={300}
+                      />
+                    ))
+                  }
+                </MarQuee>
             </div>
         </div>
      </div>
