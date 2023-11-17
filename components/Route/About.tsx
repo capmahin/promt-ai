@@ -12,8 +12,13 @@ const About = (props: Props) => {
                   AI Image  
              </Chip>
              <h5 className={`${styles.heading} mb-5 !leading-[50px]`}>
-
+             Crafting Tomorrow&apos;s Images With Artificial Intelligence
              </h5>
+             <p className={`${styles.paragraph} pb-5`}>
+             AI image generation tools have emerged as powerful resources in the
+          realm of digital art and design. These cutting-edge tools leverage
+          advanced.
+             </p>
            </div>
     </div>
   )
