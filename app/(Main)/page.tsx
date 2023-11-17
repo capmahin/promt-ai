@@ -19,8 +19,10 @@ const Page = (props: Props) => {
   
   return (
     <div>
+      <div className='banner'>
       <Header activeItem={0} />
       <Hero />
+      </div>
     </div>
   )
 }
