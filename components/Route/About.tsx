@@ -11,6 +11,9 @@ const About = (props: Props) => {
              <Chip className={`${styles.button} mb-[30px] h-[37px] bg-[#12211f]`}>
                   AI Image  
              </Chip>
+             <h5 className={`${styles.heading} mb-5 !leading-[50px]`}>
+
+             </h5>
            </div>
     </div>
   )
