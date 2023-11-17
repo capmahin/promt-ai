@@ -1,8 +1,27 @@
 import Image from 'next/image'
 import React from 'react'
 import line from '@/public/Assets/line.png';
+import MarQuee from 'react-fast-marquee';
 
 type Props = {}
+
+const rowOneImages =[
+  {
+    url: "https://pixner.net/aikeu/assets/images/banner/large-slider/one.png",
+  },
+  {
+    url: "https://pixner.net/aikeu/assets/images/banner/large-slider/two.png",
+  },
+  {
+    url: "https://pixner.net/aikeu/assets/images/banner/large-slider/three.png",
+  },
+  {
+    url: "https://pixner.net/aikeu/assets/images/banner/large-slider/four.png",
+  },
+  {
+    url: "https://pixner.net/aikeu/assets/images/banner/large-slider/five.png",
+  },
+]
 
 const Hero = (props: Props) => {
   return (
