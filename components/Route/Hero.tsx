@@ -22,7 +22,9 @@ const Hero = (props: Props) => {
             />
         </div>
         <div className='w-[100vw] mb:5 mb:mb-20 relative'>
-
+            <div className='rotate-[-4deg] mt-10 md:mt-[6.5rem]'>
+                
+            </div>
         </div>
      </div>
     </div>
