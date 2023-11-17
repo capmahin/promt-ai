@@ -21,6 +21,9 @@ const Hero = (props: Props) => {
             height={2}
             />
         </div>
+        <div className='w-[100vw] mb:5 mb:mb-20 relative'>
+
+        </div>
      </div>
     </div>
   )
