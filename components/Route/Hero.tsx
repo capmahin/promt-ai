@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
+import line from '@/public/Assets/line.png';
 
 type Props = {}
 
@@ -11,7 +13,13 @@ const Hero = (props: Props) => {
             with your <br /> Imagination
         </h1>
         <div className='md:mt-5'>
-
+            <Image 
+            src={line}
+            alt=''
+            className='absolute hidden md:block'
+            width={2000}
+            height={2}
+            />
         </div>
      </div>
     </div>
