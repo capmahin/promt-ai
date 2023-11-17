@@ -10,6 +10,9 @@ const Hero = (props: Props) => {
             Make <span className='text-[#64ff4b]'>Ai Image</span> <br />
             with your <br /> Imagination
         </h1>
+        <div className='md:mt-5'>
+
+        </div>
      </div>
     </div>
   )
