@@ -76,7 +76,7 @@ const Hero = (props: Props) => {
                 </MarQuee>
                 <MarQuee>
                   {
-                    rowOneImages.map((i,index)=>(
+                    rowTwoImages.map((i,index)=>(
                       <Image 
                       src={i.url}
                       key={index}
