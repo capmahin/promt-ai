@@ -2,6 +2,7 @@
 import React, { useState,useEffect } from 'react'
 import Header from "@/components/Header";
 import Hero from '@/components/Route/Hero';
+import About from '@/components/Route/About';
 import Image from 'next/image';
 type Props = {}
 
@@ -32,8 +33,8 @@ const Page = (props: Props) => {
           className="absolute right-[-30px]"
         />
         <br />
-        <div className=''>
-
+        <div className='w-[95%] md:w-[90%] xl:w-[80%] 2xl:w-[75%] m-auto '>
+               <About />    
         </div>
     </div>
   )
