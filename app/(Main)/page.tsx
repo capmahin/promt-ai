@@ -38,8 +38,11 @@ const Page = (props: Props) => {
                <About />    
                <div>
                    <h1 className={`${styles.heading} p-2 font-Monserrat`}>
-
+                      Latest Prompts
                    </h1>
+                   <div className='flex wrap'>
+                      
+                   </div>
                </div>
         </div>
     </div>
