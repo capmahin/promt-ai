@@ -1,5 +1,6 @@
 import { styles } from '@/utils/styles'
 import { Button, Chip } from '@nextui-org/react'
+import Image from 'next/image'
 import React from 'react'
 
 type Props = {}
@@ -24,7 +25,13 @@ const About = (props: Props) => {
              </Button>
            </div>
            <div className='col-span-1 my-10 md:mt-[unset]'>
-              
+              <Image
+          src={"https://pixner.net/aikeu/assets/images/craft-thumb.png"}
+          alt=""
+          width={600}
+          height={600}
+          priority
+        />
            </div>
     </div>
   )
