@@ -20,8 +20,11 @@ const About = (props: Props) => {
           advanced.
              </p>
              <Button className={`${styles.button} bg-[#2551b0] font-[500] h-[45px]`}>
-                      
+                      Visit Shop
              </Button>
+           </div>
+           <div className='col-span-1 my-10 md:mt-[unset]'>
+              
            </div>
     </div>
   )
