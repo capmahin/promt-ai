@@ -1,5 +1,5 @@
 import { styles } from '@/utils/styles'
-import { Chip } from '@nextui-org/react'
+import { Button, Chip } from '@nextui-org/react'
 import React from 'react'
 
 type Props = {}
@@ -19,6 +19,9 @@ const About = (props: Props) => {
           realm of digital art and design. These cutting-edge tools leverage
           advanced.
              </p>
+             <Button className={`${styles.button} bg-[#2551b0]`}>
+
+             </Button>
            </div>
     </div>
   )
