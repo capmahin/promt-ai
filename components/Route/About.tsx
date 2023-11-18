@@ -19,8 +19,8 @@ const About = (props: Props) => {
           realm of digital art and design. These cutting-edge tools leverage
           advanced.
              </p>
-             <Button className={`${styles.button} bg-[#2551b0]`}>
-
+             <Button className={`${styles.button} bg-[#2551b0] font-[500] h-[45px]`}>
+                      
              </Button>
            </div>
     </div>
