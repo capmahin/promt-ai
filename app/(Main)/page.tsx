@@ -5,6 +5,7 @@ import Hero from '@/components/Route/Hero';
 import About from '@/components/Route/About';
 import Image from 'next/image';
 import { styles } from '@/utils/styles';
+import PromptCard from '@/components/Prompts/PromptCard'
 type Props = {}
 
 const Page = (props: Props) => {
@@ -40,8 +41,8 @@ const Page = (props: Props) => {
                    <h1 className={`${styles.heading} p-2 font-Monserrat`}>
                       Latest Prompts
                    </h1>
-                   <div className='flex wrap'>
-                      
+                   <div className='flex flex-wrap'>
+                      <PromptCard />
                    </div>
                </div>
         </div>
