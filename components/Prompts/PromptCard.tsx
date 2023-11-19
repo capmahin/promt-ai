@@ -5,8 +5,8 @@ type Props = {}
 
 const PromptCard = (props: Props) => {
   return (
-    <Card>
-      
+    <Card radius='lg' className='w-full md:w-[31%] 2xl:w-[23%] p-4 bg-[#130f23]'>
+
     </Card>
   )
 }
