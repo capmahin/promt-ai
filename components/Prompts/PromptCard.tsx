@@ -1,3 +1,4 @@
+import { styles } from '@/utils/styles'
 import { Card, Image } from '@nextui-org/react'
 import React from 'react'
 
@@ -10,7 +11,7 @@ const PromptCard = (props: Props) => {
            <Image 
            src='https://pixner.net/aikeu/assets/images/category/fourteen.png'
             alt=''
-            className='w-full'
+            className='w-full  object-cover'
             width={300}
             height={300}
            />
@@ -22,6 +23,9 @@ const PromptCard = (props: Props) => {
                 height={25}
                 alt=""
               />
+              <span className={`${styles.label} pl-2 text-white`}>
+
+              </span>
             </div>
 
            </div>
