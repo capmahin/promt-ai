@@ -16,7 +16,12 @@ const PromptCard = (props: Props) => {
            />
            <div className='absolute bottom-2 left-2'>
             <div className='w-max bg-black hover:bg-[#16252] duration-300 transition-opacity hover:text-black text-white p-[10px] items-center flex rounded-xl'>
-
+              <Image 
+              src="https://pixner.net/aikeu/assets/images/category/chat.png"
+                width={25}
+                height={25}
+                alt=""
+              />
             </div>
 
            </div>
