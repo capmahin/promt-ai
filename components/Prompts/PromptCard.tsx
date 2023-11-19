@@ -32,7 +32,9 @@ const PromptCard = (props: Props) => {
            </div>
       </div>
       <div className='w-full flex justify-between py-2'>
-
+          <h3 className={`${styles.label} text-[18px] text-white`}>
+             Animal Prompts
+          </h3>
       </div>
     </Card>
   )
