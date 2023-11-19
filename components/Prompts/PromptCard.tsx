@@ -10,6 +10,9 @@ const PromptCard = (props: Props) => {
            <Image 
            src='https://pixner.net/aikeu/assets/images/category/fourteen.png'
             alt=''
+            className='w-full'
+            width={300}
+            height={300}
            />
       </div>
     </Card>
