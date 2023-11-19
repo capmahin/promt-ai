@@ -1,5 +1,6 @@
 import { styles } from '@/utils/styles'
-import { Card, Image } from '@nextui-org/react'
+import { Card } from '@nextui-org/react'
+import Image from 'next/image'
 import React from 'react'
 
 type Props = {}
@@ -24,7 +25,7 @@ const PromptCard = (props: Props) => {
                 alt=""
               />
               <span className={`${styles.label} pl-2 text-white`}>
-
+                 Chatgpt
               </span>
             </div>
 
