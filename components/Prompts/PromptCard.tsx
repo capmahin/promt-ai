@@ -31,6 +31,9 @@ const PromptCard = (props: Props) => {
 
            </div>
       </div>
+      <div className='w-full flex justify-between py-2'>
+
+      </div>
     </Card>
   )
 }
