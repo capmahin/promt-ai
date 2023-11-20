@@ -1,5 +1,5 @@
 import { styles } from '@/utils/styles'
-import { Card } from '@nextui-org/react'
+import { Card, Divider } from '@nextui-org/react'
 import Image from 'next/image'
 import React from 'react'
 
@@ -39,6 +39,7 @@ const PromptCard = (props: Props) => {
              $25.00
           </p>
       </div>
+      <Divider />
     </Card>
   )
 }
