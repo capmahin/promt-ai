@@ -1,3 +1,4 @@
+import Ratings from '@/utils/Ratings'
 import { styles } from '@/utils/styles'
 import { Avatar, Card, Divider } from '@nextui-org/react'
 import Image from 'next/image'
@@ -49,7 +50,7 @@ const PromptCard = (props: Props) => {
                @Mahin
             </span>
          </div>
-         {/* Ratings */}
+         <Ratings rating={5} />
       </div>
     </Card>
   )
