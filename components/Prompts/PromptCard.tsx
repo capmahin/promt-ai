@@ -45,6 +45,9 @@ const PromptCard = (props: Props) => {
             <Avatar 
             src='https://i.pravatar.cc/150?u=a04258114e29026302d'
             />
+            <span className={`${styles.label} pl-3`}>
+
+            </span>
          </div>
       </div>
     </Card>
