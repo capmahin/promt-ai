@@ -40,6 +40,9 @@ const PromptCard = (props: Props) => {
           </p>
       </div>
       <Divider className='bg-[#ffffff18] my-3'/>
+      <div className='w-full flex items-center justify-between'>
+
+      </div>
     </Card>
   )
 }
