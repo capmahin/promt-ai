@@ -42,7 +42,9 @@ const PromptCard = (props: Props) => {
       <Divider className='bg-[#ffffff18] my-3'/>
       <div className='w-full flex items-center justify-between'>
          <div className='flex items-center'>
-            <Avatar />
+            <Avatar 
+            src='https://i.pravatar.cc/150?u=a04258114e29026302d'
+            />
          </div>
       </div>
     </Card>
