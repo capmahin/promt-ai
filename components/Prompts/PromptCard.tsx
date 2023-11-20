@@ -35,6 +35,9 @@ const PromptCard = (props: Props) => {
           <h3 className={`${styles.label} text-[18px] text-white`}>
              Animal Prompts
           </h3>
+          <p className={`${styles.paragraph}`}>
+             $25.00
+          </p>
       </div>
     </Card>
   )
