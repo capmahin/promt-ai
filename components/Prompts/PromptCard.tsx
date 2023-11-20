@@ -39,7 +39,7 @@ const PromptCard = (props: Props) => {
              $25.00
           </p>
       </div>
-      <Divider />
+      <Divider className='bg-[#ffffff18] my-3'/>
     </Card>
   )
 }
