@@ -1,5 +1,5 @@
 import { styles } from '@/utils/styles'
-import { Card, Divider } from '@nextui-org/react'
+import { Avatar, Card, Divider } from '@nextui-org/react'
 import Image from 'next/image'
 import React from 'react'
 
@@ -42,7 +42,7 @@ const PromptCard = (props: Props) => {
       <Divider className='bg-[#ffffff18] my-3'/>
       <div className='w-full flex items-center justify-between'>
          <div className='flex items-center'>
-
+            <Avatar />
          </div>
       </div>
     </Card>
