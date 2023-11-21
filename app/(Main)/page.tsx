@@ -43,6 +43,10 @@ const Page = (props: Props) => {
                    </h1>
                    <div className='flex flex-wrap'>
                       <PromptCard />
+                      <PromptCard />
+                      <PromptCard />
+                      <PromptCard />
+                      <PromptCard />
                    </div>
                </div>
         </div>
