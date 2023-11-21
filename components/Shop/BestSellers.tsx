@@ -1,5 +1,6 @@
 import { styles } from '@/utils/styles'
 import React from 'react'
+import SellerCard from "./SellerCard"
 
 type Props = {}
 
@@ -10,7 +11,7 @@ const BestSellers = (props: Props) => {
           Top Sellers
         </h1>
         <div className='flex flex-wrap'>
-
+           <SellerCard />
         </div>
     </div>
   )
