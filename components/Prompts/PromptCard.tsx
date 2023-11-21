@@ -1,6 +1,6 @@
 import Ratings from '@/utils/Ratings'
 import { styles } from '@/utils/styles'
-import { Avatar, Card, Divider } from '@nextui-org/react'
+import { Avatar, Button, Card, Divider, Link } from '@nextui-org/react'
 import Image from 'next/image'
 import React from 'react'
 
@@ -52,6 +52,12 @@ const PromptCard = (props: Props) => {
          </div>
          <Ratings rating={5} />
       </div>
+      <br />
+      <Link href='/shop/123' className='w-full'>
+           <Button className={'mb-3 w-full bg-transparent border border-[#16c252] hover:bg-[#16c252]'}>
+
+           </Button>
+      </Link>
     </Card>
   )
 }
