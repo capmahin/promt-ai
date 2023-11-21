@@ -54,7 +54,7 @@ const PromptCard = (props: Props) => {
       </div>
       <br />
       <Link href='/shop/123' className='w-full'>
-           <Button className={'mb-3 w-full bg-transparent border border-[#16c252] hover:bg-[#16c252]'}>
+           <Button className={'mb-3 w-full bg-transparent border border-[#16c252] hover:bg-[#16c252] hover:text-black duration-300 transition-opacity font-Inter font-[600]'}>
 
            </Button>
       </Link>
