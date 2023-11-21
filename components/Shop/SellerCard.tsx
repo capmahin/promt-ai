@@ -1,3 +1,4 @@
+import { styles } from '@/utils/styles'
 import { Avatar, Card } from '@nextui-org/react'
 import React from 'react'
 
@@ -10,6 +11,9 @@ const SellerCard = (props: Props) => {
        src='https://pixner.net/aikeu/assets/images/blog-details/a-one.png'
        className='w-[80px] h-[80px]'
        />
+       <span className={`${styles.label} py-2 text-xl`}>
+
+       </span>
     </Card>
   )
 }
