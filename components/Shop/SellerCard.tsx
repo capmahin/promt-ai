@@ -1,3 +1,4 @@
+import Ratings from '@/utils/Ratings'
 import { styles } from '@/utils/styles'
 import { Avatar, Card } from '@nextui-org/react'
 import React from 'react'
@@ -15,8 +16,9 @@ const SellerCard = (props: Props) => {
             @Shahriar Sajeeb
        </span>
        <div className='flex items-center'>
-          <span className={`${styles.label}`}>
+          <span className={`${styles.label} pr-2`}>
             4.5/5
+            <Ratings rating={4.5}/>
           </span>
        </div>
     </Card>
