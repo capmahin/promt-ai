@@ -18,9 +18,13 @@ const SellerCard = (props: Props) => {
        <div className='flex items-center'>
           <span className={`${styles.label} pr-2`}>
             4.5/5
-            <Ratings rating={4.5}/>
+            
           </span>
+          <Ratings rating={4.5}/>
        </div>
+       <span className={`${styles.label} py-2`}>
+          Total Sales: 212
+       </span>
     </Card>
   )
 }
