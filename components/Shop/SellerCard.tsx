@@ -15,7 +15,9 @@ const SellerCard = (props: Props) => {
             @Shahriar Sajeeb
        </span>
        <div className='flex items-center'>
-
+          <span className={`${styles.label}`}>
+            4.5/5
+          </span>
        </div>
     </Card>
   )
