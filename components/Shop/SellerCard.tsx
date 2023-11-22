@@ -12,8 +12,11 @@ const SellerCard = (props: Props) => {
        className='w-[80px] h-[80px]'
        />
        <span className={`${styles.label} py-2 text-xl`}>
-
+            @Shahriar Sajeeb
        </span>
+       <div className='flex items-center'>
+
+       </div>
     </Card>
   )
 }
