@@ -15,6 +15,9 @@ const Future = (props: Props) => {
         className='md:w-[90%] md:ml-[-50px] 2xl:ml-[-90px]'
         />
        </div>
+       <div className='col-span-1'>
+
+       </div>
     </div>
   )
 }
