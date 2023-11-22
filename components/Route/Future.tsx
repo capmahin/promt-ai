@@ -1,3 +1,5 @@
+import { styles } from '@/utils/styles'
+import { Button } from '@nextui-org/react'
 import Image from 'next/image'
 import React from 'react'
 
@@ -15,8 +17,13 @@ const Future = (props: Props) => {
         className='md:w-[90%] md:ml-[-50px] 2xl:ml-[-90px]'
         />
        </div>
-       <div className='col-span-1'>
-
+       <div className='col-span-1 w-full flex justify-center items-center'>
+          <div className='2xl:w-[-60%]'>
+              <Button className={`${styles.button} mb-[30px] h-[37px] bg-[#12211f]`}>
+                 Future
+              </Button>
+              
+          </div>
        </div>
     </div>
   )
