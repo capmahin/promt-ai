@@ -22,7 +22,7 @@ const Future = (props: Props) => {
               <Button className={`${styles.button} mb-[30px] h-[37px] bg-[#12211f]`}>
                  Future
               </Button>
-              
+            {/* Rest day Start from Tommorw */}
           </div>
        </div>
     </div>
