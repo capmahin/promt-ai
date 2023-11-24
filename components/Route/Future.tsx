@@ -24,7 +24,7 @@ const Future = (props: Props) => {
               </Button>
             {/* Rest day Start from Tommorw */}
             <h5 className={`${styles.heading} mb-5 !leading-[50px]`}>
-
+               Unleashing The Glorious Future Of Ai generated Images
             </h5>
           </div>
        </div>
