@@ -23,6 +23,9 @@ const Future = (props: Props) => {
                  Future
               </Button>
             {/* Rest day Start from Tommorw */}
+            <h5 className={`${styles.heading} mb-5 !leading-[50px]`}>
+
+            </h5>
           </div>
        </div>
     </div>
