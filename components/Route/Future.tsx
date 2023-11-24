@@ -26,6 +26,9 @@ const Future = (props: Props) => {
             <h5 className={`${styles.heading} mb-5 !leading-[50px]`}>
                Unleashing The Glorious Future Of Ai generated Images
             </h5>
+            <p className={`${styles.paragraph} pb-5`}>
+
+            </p>
           </div>
        </div>
     </div>
