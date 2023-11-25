@@ -9,6 +9,8 @@ const Partners = (props: Props) => {
         <h1 className={`${styles.heading} font-Monserrat text-center`}>
         Our Partner&apos;s
         </h1>
+        {/* Add 
+         */}
 
     </div>
   )
