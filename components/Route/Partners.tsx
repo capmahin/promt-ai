@@ -11,6 +11,7 @@ const Partners = (props: Props) => {
         </h1>
         {/* Add 
          */}
+         {/* start now */}
 
     </div>
   )
