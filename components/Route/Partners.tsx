@@ -1,5 +1,6 @@
 import { styles } from '@/utils/styles'
 import React from 'react'
+import Marquee from 'react-fast-marquee'
 
 type Props = {}
 
@@ -14,6 +15,9 @@ const Partners = (props: Props) => {
          {/* start now */}
          <div className='w-full flex justify-center pt-3'>
           <div className='w-[50px] h-[2px] bg-[#64ff4b]'/>
+          <Marquee className='w-full my-10'>
+
+          </Marquee>
          </div>
 
     </div>
