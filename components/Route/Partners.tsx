@@ -1,4 +1,5 @@
 import { styles } from '@/utils/styles'
+import Image from 'next/image';
 import React from 'react'
 import Marquee from 'react-fast-marquee'
 
@@ -49,7 +50,17 @@ const Partners = (props: Props) => {
          <div className='w-full flex justify-center pt-3'>
           <div className='w-[50px] h-[2px] bg-[#64ff4b]'/>
           <Marquee className='w-full my-10'>
-             
+             {
+              partners.map((i,index)=>(
+                <Image 
+                src={i.url}
+                alt=''
+                width={100}
+                height={100}
+                key={index}
+                />
+              ))
+             }
           </Marquee>
          </div>
 
