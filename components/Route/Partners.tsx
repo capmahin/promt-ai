@@ -12,7 +12,7 @@ const Partners = (props: Props) => {
         {/* Add 
          */}
          {/* start now */}
-         <div>
+         <div className='w-full flex justify-center pt-3'>
           <div className='w-[50px] h-[2px] bg-[#64ff4b]'/>
          </div>
 
