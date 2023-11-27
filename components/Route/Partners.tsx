@@ -12,6 +12,9 @@ const Partners = (props: Props) => {
         {/* Add 
          */}
          {/* start now */}
+         <div>
+          <div className='w-[50px] h-[2px] bg-[#64ff4b]'/>
+         </div>
 
     </div>
   )
