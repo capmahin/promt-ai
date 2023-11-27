@@ -58,7 +58,7 @@ const Partners = (props: Props) => {
                 width={100}
                 height={100}
                 key={index}
-                className='mx-14 grayscale-[100%] w-[120px] h-[120px] object-contain'
+                className='mx-14 grayscale-[100%] w-[120px] h-[120px] object-contain hover:grayscale-0'
                 />
               ))
              }
