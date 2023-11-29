@@ -1,4 +1,5 @@
 import { styles } from '@/utils/styles'
+import { Button } from '@nextui-org/react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -14,6 +15,9 @@ const SellersBanner = (props: Props) => {
             <br />
             <br />
             <Link href={"/create-shop"}>
+              <Button className='mb-3 p-6 rounded-md text-xl bg-black text-white font-Inter'>
+
+              </Button>
             </Link>
         </div>
     </div>
