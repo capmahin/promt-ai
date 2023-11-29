@@ -16,7 +16,7 @@ const SellersBanner = (props: Props) => {
             <br />
             <Link href={"/create-shop"}>
               <Button className='mb-3 p-6 rounded-md text-xl bg-black text-white font-Inter'>
-
+                <span>Get Started</span>
               </Button>
             </Link>
         </div>
