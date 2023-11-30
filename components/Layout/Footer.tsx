@@ -16,7 +16,7 @@ const Footer = (props: Props) => {
             </Link>
            </div>
            <div>
-            <ul className='flex items-center'>
+            <ul className='flex items-center flex-wrap'>
               <li>
                 <Link href="/" className={`${styles.label} hover:text-[#64ff4b] duration-200 transition px-4`}>
                   Home
