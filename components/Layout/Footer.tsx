@@ -37,6 +37,11 @@ const Footer = (props: Props) => {
             </li>
             </ul>
            </div>
+           <p className={`${styles.paragraph} text-center`}>
+        Copyright © 2023 Becodemy . All Rights Reserved
+      </p>
+      <br />
+      <br />
       </div>
     </div>
   )
