@@ -16,9 +16,15 @@ const Footer = (props: Props) => {
             </Link>
            </div>
            <div>
-            <ul>
+            <ul className='flex items-center'>
               <li>
                 <Link href="/" className={`${styles.label} hover:text-[#64ff4b] duration-200 transition px-4`}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/marketplace" className={`${styles.label} hover:text-[#64ff4b] duration-200 transition px-4`}>
+                  MarketPlace
                 </Link>
               </li>
             </ul>
