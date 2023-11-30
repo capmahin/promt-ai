@@ -14,6 +14,13 @@ const Footer = (props: Props) => {
                     </h1>
             </Link>
            </div>
+           <div>
+            <ul>
+              <li>
+                
+              </li>
+            </ul>
+           </div>
       </div>
     </div>
   )
