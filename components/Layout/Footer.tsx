@@ -4,7 +4,9 @@ type Props = {}
 
 const Footer = (props: Props) => {
   return (
-    <div>Footer</div>
+    <div className='mt-8'>
+
+    </div>
   )
 }
 
