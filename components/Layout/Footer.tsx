@@ -1,3 +1,4 @@
+import { styles } from '@/utils/styles'
 import Link from 'next/link'
 import React from 'react'
 
@@ -17,7 +18,8 @@ const Footer = (props: Props) => {
            <div>
             <ul>
               <li>
-                
+                <Link href="/" className={`${styles.label} hover:text-[#64ff4b] duration-200 transition px-4`}>
+                </Link>
               </li>
             </ul>
            </div>
