@@ -44,6 +44,8 @@ const Footer = (props: Props) => {
       </p>
       <br />
       <br />
+      {/* start clerk
+       */}
     </div>
   )
 }
