@@ -21,9 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${monserrat.variable}`}>
+        <ClerkProvider>
         <Provider>
         {children}
         </Provider>
+        </ClerkProvider>
+        
         </body>
     </html>
   )
