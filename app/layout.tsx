@@ -19,15 +19,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    <ClerkProvider>
     <html lang="en">
-      <body className={`${inter.variable} ${monserrat.variable}`}>
-        <ClerkProvider>
+      <body className={`${inter.variable} ${monserrat.variable}`}> 
         <Provider>
         {children}
         </Provider>
-        </ClerkProvider>
-        
         </body>
     </html>
+    </ClerkProvider>
   )
 }
