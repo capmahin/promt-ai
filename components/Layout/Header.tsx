@@ -4,6 +4,7 @@ import Navigation from "./Navigation";
 import {AiOutlineSearch} from 'react-icons/ai';
 import {CgProfile} from 'react-icons/cg';
 import {FaBars} from 'react-icons/fa';
+import { UserButton } from '@clerk/nextjs';
 
 type Props = {
     activeItem: number;
@@ -46,9 +47,10 @@ const Header = ({activeItem}: Props) => {
               <div className="flex items-center ml-10">
                  <AiOutlineSearch  className="text-[25px] mr-5 cursor-pointer"/>
                  {/* Todo Authentication */}
-                 <Link href="/sign-in">
+                 {/* <Link href="/sign-in">
                     <CgProfile  className="text-[25px] cursor-pointer"/>
-                 </Link>
+                 </Link> */}
+                 <UserButton afterSignOutUrl="/"/>
               </div>
             
         </div>
