@@ -10,6 +10,11 @@ export async function GET(req:NextRequest){
                 status: 400,
             });
         }
+
+        // todo --- we need to check the user have any shop or not
+
+        return NextResponse.json({user});
+
     } catch (error) {
         console.log('load user error',error);
         return new NextResponse("Internal Error",{status: 500})
