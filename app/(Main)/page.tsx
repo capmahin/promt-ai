@@ -31,8 +31,10 @@ const Page = (props: Props) => {
     setLoading(true);
     axios.get("/api/me").then((res)=>{
       setUser(res.data);
+      setLoading(false);
     }).catch((error)=>{
       console.log(error);
+      setLoading(false);
     })
   },[])
 
