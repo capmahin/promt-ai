@@ -12,7 +12,7 @@ type Props = {
     user: User | null;
 }
 
-const Header = ({activeItem}: Props) => {
+const Header = ({user, activeItem}: Props) => {
    const [active, setactive] = useState(false);
    const [open,setOpen] = useState(false);
 

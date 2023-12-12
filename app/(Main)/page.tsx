@@ -18,6 +18,7 @@ type Props = {}
 
 const Page = (props: Props) => {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
