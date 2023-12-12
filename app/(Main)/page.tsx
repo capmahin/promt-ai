@@ -28,6 +28,7 @@ const Page = (props: Props) => {
   }, [isMounted]);
 
   useEffect(()=>{
+    setLoading(true);
     axios.get("/api/me").then((res)=>{
       setUser(res.data);
     }).catch((error)=>{
