@@ -17,6 +17,7 @@ import axios from "axios";
 type Props = {}
 
 const Page = (props: Props) => {
+  const [user, setUser] = useState();
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
