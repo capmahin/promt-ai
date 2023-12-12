@@ -17,7 +17,7 @@ import axios from "axios";
 type Props = {}
 
 const Page = (props: Props) => {
-  const [user, setUser] = useState();
+  const [user, setUser] = useState(null);
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const Page = (props: Props) => {
   return (
     <div>
       <div className='banner'>
-      <Header activeItem={0} />
+      <Header activeItem={0} user={user}/>
       <Hero />
       </div>
       <Image

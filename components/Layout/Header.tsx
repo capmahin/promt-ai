@@ -5,9 +5,11 @@ import {AiOutlineSearch} from 'react-icons/ai';
 import {CgProfile} from 'react-icons/cg';
 import {FaBars} from 'react-icons/fa';
 import { UserButton } from '@clerk/nextjs';
+import {User} from "@clerk/nextjs/server";
 
 type Props = {
     activeItem: number;
+    user: User | null;
 }
 
 const Header = ({activeItem}: Props) => {
