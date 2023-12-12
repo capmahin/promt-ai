@@ -26,7 +26,11 @@ const Page = (props: Props) => {
   }, [isMounted]);
 
   useEffect(()=>{
-    
+    axios.get("/api/me").then((res)=>{
+      console.log(res.data);
+    }).catch((error)=>{
+      console.log(error);
+    })
   },[])
 
   if(!isMounted){
