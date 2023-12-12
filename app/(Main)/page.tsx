@@ -43,7 +43,12 @@ const Page = (props: Props) => {
   }
   
   return (
-    <div>
+    <>
+    {
+      loading ? (
+        <></>
+      ):(
+        <div>
       <div className='banner'>
       <Header activeItem={0} user={user}/>
       <Hero />
@@ -84,6 +89,9 @@ const Page = (props: Props) => {
                </div>
         </div>
     </div>
+      )
+    }
+    </>
   )
 }
 
