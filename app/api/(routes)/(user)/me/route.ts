@@ -7,5 +7,6 @@ export async function GET(req:NextRequest){
         
     } catch (error) {
         console.log('load user error',error);
+        return new NextResponse("Internal Error",{status: 500})
     }
 }
