@@ -12,6 +12,7 @@ import Partners from '@/components/Route/Partners';
 import SellersBanner from '@/components/Shop/SellersBanner';
 import Footer from "@/components/Layout/Footer"
 import { Divider } from '@nextui-org/react';
+import axios from "axios";
 
 type Props = {}
 
