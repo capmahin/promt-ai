@@ -25,6 +25,10 @@ const Page = (props: Props) => {
     }
   }, [isMounted]);
 
+  useEffect(()=>{
+    
+  },[])
+
   if(!isMounted){
     return null;
   }
