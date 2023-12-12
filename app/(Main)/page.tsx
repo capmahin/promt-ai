@@ -28,7 +28,7 @@ const Page = (props: Props) => {
 
   useEffect(()=>{
     axios.get("/api/me").then((res)=>{
-      console.log(res.data);
+      setUser(res.data);
     }).catch((error)=>{
       console.log(error);
     })
