@@ -1,3 +1,3 @@
 //todo
 import {User,currentUser} from "@clerk/nextjs/server";
-import {NextApiRequest,NextApiResponse} from "next";
+import {NextRequest,NextResponse} from "next/server";
