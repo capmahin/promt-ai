@@ -6,6 +6,7 @@ import {CgProfile} from 'react-icons/cg';
 import {FaBars} from 'react-icons/fa';
 import { UserButton } from '@clerk/nextjs';
 import {User} from "@clerk/nextjs/server";
+import DropDown from "./DropDown";
 
 type Props = {
     activeItem: number;
@@ -15,6 +16,8 @@ type Props = {
 const Header = ({user, activeItem}: Props) => {
    const [active, setactive] = useState(false);
    const [open,setOpen] = useState(false);
+   const [activeProfile, setActiveProfile] = useState(false);
+   const [isSellerExist, setIsSellerExist] = useState(false);
 
    if(typeof window !== 'undefined'){
     window.addEventListener('scroll', ()=>{
@@ -31,6 +34,10 @@ const Header = ({user, activeItem}: Props) => {
         if(target.id === 'screen'){
             setOpen(!open);
         }
+   };
+
+   const handleProfile=()=>{
+    setActiveProfile(!activeProfile)
    }
 
   return (
@@ -49,9 +56,25 @@ const Header = ({user, activeItem}: Props) => {
               <div className="flex items-center ml-10">
                  <AiOutlineSearch  className="text-[25px] mr-5 cursor-pointer"/>
                  {/* Todo Authentication */}
-                 {/* <Link href="/sign-in">
+                 {
+                    user ? (
+                        <div>
+                            <DropDown 
+                            user={user}
+                            setOpen={setOpen}
+                            handleProfile={handleProfile}
+                            isSellerExist={isSellerExist}
+                            />
+                        </div>
+                    ) : (
+                        <Link href="/sign-in">
+                       <CgProfile className="text-[25px] cursor-pointer" />
+                        </Link>
+                    )
+                 }
+                 <Link href="/sign-in">
                     <CgProfile  className="text-[25px] cursor-pointer"/>
-                 </Link> */}
+                 </Link>
                  <UserButton afterSignOutUrl="/"/>
               </div>
             
