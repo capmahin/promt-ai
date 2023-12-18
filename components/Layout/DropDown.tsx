@@ -1,4 +1,5 @@
 import { User } from '@clerk/nextjs/server';
+import { Avatar, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from '@nextui-org/react';
 import React from 'react'
 
 type Props = {
@@ -13,7 +14,25 @@ const DropDown = ({
     user, setOpen, handleProfile, isSellerExist
 }: Props) => {
   return (
-    <div>DropDown</div>
+    <Dropdown placeholder='bottom-start'>
+      <DropdownTrigger>
+        <Avatar
+        src={user?.imageUrl}
+        alt=''
+        className='w-[40px] h-[40px] cursor-pointer'
+        />
+      </DropdownTrigger>
+      <DropdownMenu aria-label='Profile Action' variant='flat'>
+           <DropdownItem 
+           onClick={()=>{
+            handleProfile();
+            setOpen(false);
+           }}
+           >
+
+           </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
   )
 }
 

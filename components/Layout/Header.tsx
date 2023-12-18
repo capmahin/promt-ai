@@ -55,7 +55,7 @@ const Header = ({user, activeItem}: Props) => {
              </div>
               <div className="flex items-center ml-10">
                  <AiOutlineSearch  className="text-[25px] mr-5 cursor-pointer"/>
-                 {/* Todo Authentication */}
+                 
                  {
                     user ? (
                         <div>
