@@ -35,6 +35,9 @@ const DropDown = ({
               alt=''
               className='w-[30px] h-[30px] cursor-pointer'
               />
+              <span>
+                MY Profile
+              </span>
             </div>
            </DropdownItem>
       </DropdownMenu>
