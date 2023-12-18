@@ -33,7 +33,7 @@ const DropDown = ({
               <Avatar
               src={user?.imageUrl}
               alt=''
-              className='w-[40px] h-[40px] cursor-pointer'
+              className='w-[30px] h-[30px] cursor-pointer'
               />
             </div>
            </DropdownItem>
