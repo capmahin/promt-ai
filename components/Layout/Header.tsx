@@ -72,10 +72,7 @@ const Header = ({user, activeItem}: Props) => {
                         </Link>
                     )
                  }
-                 <Link href="/sign-in">
-                    <CgProfile  className="text-[25px] cursor-pointer"/>
-                 </Link>
-                 <UserButton afterSignOutUrl="/"/>
+                 
               </div>
             
         </div>

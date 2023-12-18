@@ -36,7 +36,7 @@ const DropDown = ({
               alt=''
               className='w-[30px] h-[30px] cursor-pointer'
               />
-              <span className={`${styles.label} text-black text-sm`}>
+              <span className={`${styles.label} text-black text-[16px] pl-2`}>
                 MY Profile
               </span>
             </div>
