@@ -29,7 +29,13 @@ const DropDown = ({
             setOpen(false);
            }}
            >
-
+            <div className="flex w-full items-center">
+              <Avatar
+              src={user?.imageUrl}
+              alt=''
+              className='w-[40px] h-[40px] cursor-pointer'
+              />
+            </div>
            </DropdownItem>
       </DropdownMenu>
     </Dropdown>
