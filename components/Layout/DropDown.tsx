@@ -1,3 +1,4 @@
+import { styles } from '@/utils/styles';
 import { User } from '@clerk/nextjs/server';
 import { Avatar, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from '@nextui-org/react';
 import React from 'react'
@@ -35,7 +36,7 @@ const DropDown = ({
               alt=''
               className='w-[30px] h-[30px] cursor-pointer'
               />
-              <span>
+              <span className={`${styles.label} text-black text-sm`}>
                 MY Profile
               </span>
             </div>
