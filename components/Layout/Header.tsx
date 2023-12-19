@@ -78,7 +78,7 @@ const Header = ({user, activeItem}: Props) => {
         </div>
        {
         activeProfile && (
-            <div className='w-full fixed h-screen overflow-hidden flex justify-center items-center top-0 left-0'>
+            <div className='w-full fixed h-screen overflow-hidden flex justify-center items-center top-0 left-0 bg-[#00000068] z-[9999]'>
 
             </div>
         )
