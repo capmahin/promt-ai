@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 import {AiOutlineSearch} from 'react-icons/ai';
 import {CgProfile} from 'react-icons/cg';
 import {FaBars} from 'react-icons/fa';
-import { UserButton } from '@clerk/nextjs';
+import {  UserProfile } from '@clerk/nextjs';
 import {User} from "@clerk/nextjs/server";
 import DropDown from "./DropDown";
 
@@ -80,7 +80,7 @@ const Header = ({user, activeItem}: Props) => {
         activeProfile && (
             <div className='w-full fixed h-screen overflow-hidden flex justify-center items-center top-0 left-0 bg-[#00000068] z-[9999]'>
                 <div className='w-min relative h-[90vh] overflow-y-scroll bg-white rounded-xl shadow'>
-
+                   <UserProfile />
                 </div>
             </div>
         )
