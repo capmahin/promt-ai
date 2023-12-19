@@ -76,7 +76,13 @@ const Header = ({user, activeItem}: Props) => {
               </div>
             
         </div>
-        {/* Todo */}
+       {
+        activeProfile && (
+            <div className='w-full fixed h-screen overflow-hidden flex justify-center items-center top-0 left-0'>
+
+            </div>
+        )
+       }
 
         {/* for mobile screen */}
         <div className='w-full md:hidden flex items-center justify-between'>
