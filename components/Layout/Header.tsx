@@ -84,6 +84,7 @@ const Header = ({user, activeItem}: Props) => {
                    <UserProfile />
                    <RxCross1
                    className="absolute text-black text-2xl top-10 right-10 cursor-pointer"
+                   onClick={handleProfile}
                    />
                 </div>
             </div>
