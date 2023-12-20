@@ -54,7 +54,7 @@ const DropDown = ({
               <TbSwitchVertical className="text-2xl ml-2 text-black"/>
             </Link>
            </DropdownItem>
-           <DropdownItem>
+           <DropdownItem className='flex items-center'>
             <AiOutlineLogout
             className="text-2xl ml-2 text-black"
             />
