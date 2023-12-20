@@ -2,6 +2,7 @@ import { styles } from '@/utils/styles';
 import { User } from '@clerk/nextjs/server';
 import { Avatar, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from '@nextui-org/react';
 import Link from 'next/link';
+import { AiOutlineLogout } from 'react-icons/ai';
 import {TbSwitchVertical} from "react-icons/tb";
 
 type Props = {
@@ -53,9 +54,10 @@ const DropDown = ({
               <TbSwitchVertical className="text-2xl ml-2 text-black"/>
             </Link>
            </DropdownItem>
-           <DropdownItem 
-           className={`${!isSellerExist && "hidden"}`}
-           >
+           <DropdownItem>
+            <AiOutlineLogout
+            className="text-2xl ml-2 text-black"
+            />
             <span className={`${styles.label} text-black text-[16px] pl-2`}>
               Log out
             </span>
