@@ -54,13 +54,16 @@ const DropDown = ({
               <TbSwitchVertical className="text-2xl ml-2 text-black"/>
             </Link>
            </DropdownItem>
-           <DropdownItem className='flex items-center'>
+           <DropdownItem >
+            <div className='flex items-center w-full'>
             <AiOutlineLogout
             className="text-2xl ml-2 text-black"
             />
             <span className={`${styles.label} text-black text-[16px] pl-2`}>
               Log out
             </span>
+            </div>
+            
            </DropdownItem>
       </DropdownMenu>
     </Dropdown>
