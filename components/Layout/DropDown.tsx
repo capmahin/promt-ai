@@ -22,6 +22,7 @@ const DropDown = ({
   const router = useRouter();
   const handleLogOut = async ()=>{
       await signOut();
+      router.push("/sign-in");
   }
   return (
     <Dropdown placeholder='bottom-start'>
