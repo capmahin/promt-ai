@@ -56,12 +56,9 @@ const DropDown = ({
            <DropdownItem 
            className={`${!isSellerExist && "hidden"}`}
            >
-            <Link href={"/my-shop"} className='flex w-full items-center'>
-              <span className={`${styles.label} text-black text-[16px] pl-2`}>
-                Switching to Seller
-              </span>
-              <TbSwitchVertical className="text-2xl ml-2 text-black"/>
-            </Link>
+            <span>
+              Log out
+            </span>
            </DropdownItem>
       </DropdownMenu>
     </Dropdown>
