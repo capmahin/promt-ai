@@ -56,7 +56,7 @@ const DropDown = ({
            <DropdownItem 
            className={`${!isSellerExist && "hidden"}`}
            >
-            <span>
+            <span className={`${styles.label} text-black text-[16px] pl-2`}>
               Log out
             </span>
            </DropdownItem>
