@@ -1,6 +1,7 @@
 'use client';
 
 import { styles } from "@/utils/styles";
+import { Input } from "@nextui-org/react";
 
 type Props = {}
 
@@ -16,6 +17,7 @@ const Page = (props: Props) => {
                <label className={`${styles.label}mb-2 block`}>
                   Shop Name
                </label>
+               <Input/>
             </div>
         </form>
       </div>
