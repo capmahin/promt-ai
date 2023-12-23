@@ -36,6 +36,7 @@ const Page = (props: Props) => {
                isRequired
                type="name"
                value={shopData.name}
+               onChange={(e)=> setShopData({...shopData,name:e.target.value})}
                />
             </div>
         </form>
