@@ -1,11 +1,26 @@
 'use client';
 
 import { styles } from "@/utils/styles";
+import { useUser } from "@clerk/nextjs";
 import { Input } from "@nextui-org/react";
+import { useState } from "react";
 
 type Props = {}
 
 const Page = (props: Props) => {
+    const {user} = useUser();
+    const [loading, setLoading] = useState(false);
+    const [shopData, setShopData] = useState({
+        name:"",
+        description:"",
+        shopProductsType:"",
+        avatar:"",
+
+    });
+
+    const handleSubmit = async (e:React.FormEvent<HTMLFormControlsCollection>)=>{
+        e.preventDefault();
+    }
   return (
     <div className="w-full h-screen flex flex-col justify-center">
       <div>
@@ -17,7 +32,11 @@ const Page = (props: Props) => {
                <label className={`${styles.label}mb-2 block`}>
                   Shop Name
                </label>
-               <Input/>
+               <Input
+               isRequired
+               type="name"
+               value={shopData.name}
+               />
             </div>
         </form>
       </div>
