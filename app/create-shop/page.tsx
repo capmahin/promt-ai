@@ -2,10 +2,12 @@
 
 type Props = {}
 
-const page = (props: Props) => {
+const Page = (props: Props) => {
   return (
-    <div>page</div>
+    <div className="w-full h-screen flex flex-col justify-center">
+
+    </div>
   )
 }
 
-export default page
+export default Page
