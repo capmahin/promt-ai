@@ -37,6 +37,9 @@ const Page = (props: Props) => {
                type="name"
                value={shopData.name}
                onChange={(e)=> setShopData({...shopData,name:e.target.value})}
+               label="Becodemy"
+               size="sm"
+               variant="bordered"
                />
             </div>
         </form>
