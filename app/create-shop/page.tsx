@@ -11,6 +11,9 @@ const Page = (props: Props) => {
         <h1 className={`${styles.heading} text-center font-Monserrat`}>
             Start to selling with us
         </h1>
+        <form className="2xl:w-[40%] xl:w-[50%] md:w-[70%] w-[90%] m-auto">
+            
+        </form>
       </div>
     </div>
   )
