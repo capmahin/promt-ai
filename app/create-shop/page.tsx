@@ -2,7 +2,7 @@
 
 import { styles } from "@/utils/styles";
 import { useUser } from "@clerk/nextjs";
-import { Input, Textarea } from "@nextui-org/react";
+import { Button, Input, Textarea } from "@nextui-org/react";
 import { useState } from "react";
 
 type Props = {}
@@ -70,6 +70,9 @@ const Page = (props: Props) => {
                 className="col-span-12 md:col-span-6 md:md-0"
                 />
                 <br />
+                <Button className="mb-3 w-full bg-transparent h-[45px] border border-[#16c252] text-[#16c252] hover:bg-[#16c252] hover:text-black duration-300 transition-opacity font-Inter font-[600]">
+
+                </Button>
             </div>
         </form>
       </div>
