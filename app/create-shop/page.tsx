@@ -2,7 +2,7 @@
 
 import { styles } from "@/utils/styles";
 import { useUser } from "@clerk/nextjs";
-import { Input } from "@nextui-org/react";
+import { Input, Textarea } from "@nextui-org/react";
 import { useState } from "react";
 
 type Props = {}
@@ -59,8 +59,13 @@ const Page = (props: Props) => {
             </div>
             <div className="w-full my-5">
                 <label className={`${styles.label} mb-2 block`}>
-
+                  What you wanna sale with us?
                 </label>
+                <Textarea
+                variant="bordered"
+                value={shopData.shopProductsType}
+                onChange={(e)=> setShopData({...shopData, shopProductsType: e.target.value})}
+                />
             </div>
         </form>
       </div>
