@@ -43,7 +43,9 @@ const Page = (props: Props) => {
                />
             </div>
             <div className="w-full my-5">
-
+                <label className={`${styles.label} mb-2 block`}>
+                 
+                </label>
             </div>
         </form>
       </div>
