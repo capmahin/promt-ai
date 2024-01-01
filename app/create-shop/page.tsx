@@ -44,8 +44,16 @@ const Page = (props: Props) => {
             </div>
             <div className="w-full my-5">
                 <label className={`${styles.label} mb-2 block`}>
-                 
+                 Shop Description (Max 120 letters)
                 </label>
+                <Input
+                isRequired
+                type="text"
+                label="lorem ipsum"
+                size="sm"
+                value={shopData.description}
+                onChange={(e)=> setShopData({...shopData,description:e.target.value})}
+                />
             </div>
         </form>
       </div>
