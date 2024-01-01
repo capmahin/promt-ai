@@ -65,6 +65,9 @@ const Page = (props: Props) => {
                 variant="bordered"
                 value={shopData.shopProductsType}
                 onChange={(e)=> setShopData({...shopData, shopProductsType: e.target.value})}
+                required
+                placeholder="Chatgpt,Midjoureney Prompts..."
+                className="col-span-12 md:col-span-6 md:md-0"
                 />
             </div>
         </form>
