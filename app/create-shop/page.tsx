@@ -69,6 +69,7 @@ const Page = (props: Props) => {
                 placeholder="Chatgpt,Midjoureney Prompts..."
                 className="col-span-12 md:col-span-6 md:md-0"
                 />
+                <br />
             </div>
         </form>
       </div>
