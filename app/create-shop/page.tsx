@@ -53,6 +53,8 @@ const Page = (props: Props) => {
                 size="sm"
                 value={shopData.description}
                 onChange={(e)=> setShopData({...shopData,description:e.target.value})}
+                variant="bordered"
+                maxLength={120}
                 />
             </div>
         </form>
