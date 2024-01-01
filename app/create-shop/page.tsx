@@ -42,6 +42,9 @@ const Page = (props: Props) => {
                variant="bordered"
                />
             </div>
+            <div className="w-full my-5">
+
+            </div>
         </form>
       </div>
     </div>
