@@ -16,6 +16,8 @@ export async function POST(req:NextRequest){
         if(user){
             return new NextResponse("You already have one shop with this account!",{status:400})
         }
+         const shop = await prisma.shops.create({data})
+        return NextResponse.json(shop);
     } catch (error) {
        console.log('create shop error',error);
        return new NextResponse("Internal Error",{status:500}) 
