@@ -33,29 +33,29 @@ const Page = (props: Props) => {
         avatar: user?.imageUrl || "",
         userId: user?.id,
       };
-      // await axios
-      //   .post("/api/create-shop", data)
-      //   .then((res) => {
-      //     setLoading(false);
-      //     toast.success("Shop created successfully!");
-      //     setShopData({
-      //       name: "",
-      //       description: "",
-      //       shopProductsType: "",
-      //       avatar: "",
-      //     });
-      //     router.push("/");
-      //   })
-      //   .catch((error) => {
-      //     setLoading(false);
-      //     toast.error(error.response.data);
-      //     setShopData({
-      //       name: "",
-      //       description: "",
-      //       shopProductsType: "",
-      //       avatar: "",
-      //     });
-      //   });
+      await axios
+        .post("/api/create-shop", data)
+        .then((res) => {
+          setLoading(false);
+          toast.success("Shop created successfully!");
+          setShopData({
+            name: "",
+            description: "",
+            shopProductsType: "",
+            avatar: "",
+          });
+          router.push("/");
+        })
+        .catch((error) => {
+          setLoading(false);
+          toast.error(error.response.data);
+          setShopData({
+            name: "",
+            description: "",
+            shopProductsType: "",
+            avatar: "",
+          });
+        });
     }
   };
 

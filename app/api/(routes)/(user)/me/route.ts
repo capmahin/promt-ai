@@ -1,6 +1,7 @@
 //todo
 import {User,currentUser} from "@clerk/nextjs/server";
 import {NextRequest,NextResponse} from "next/server";
+import prisma from "@/lib/prismaDb";
 
 export async function GET(req:NextRequest){
     try {
@@ -11,7 +12,11 @@ export async function GET(req:NextRequest){
             });
         }
 
-        // todo --- we need to check the user have any shop or not
+        const shop = await prisma.shops.findUnique({
+            where:{
+                userId: user.id,
+            }
+        })
 
         return NextResponse.json({user});
 
