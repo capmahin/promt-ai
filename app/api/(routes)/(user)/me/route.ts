@@ -18,7 +18,7 @@ export async function GET(req:NextRequest){
             }
         })
 
-        return NextResponse.json({user});
+        return NextResponse.json({user,shop});
 
     } catch (error) {
         console.log('load user error',error);
