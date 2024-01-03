@@ -4,7 +4,11 @@ type Props = {}
 
 const Page = (props: Props) => {
   return (
-    <div>page</div>
+    <div className="flex w-full">
+            <div className="h-screen flex p-2 bg-[#1111C42] md:w-[20%] 2xl:w-[17%]">
+                   
+            </div>
+    </div>
   )
 }
 
