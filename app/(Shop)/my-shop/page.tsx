@@ -1,4 +1,5 @@
 'use client';
+
 import ShopSidebar from "@/components/Shop/ShopSidebar"
 type Props = {}
 
