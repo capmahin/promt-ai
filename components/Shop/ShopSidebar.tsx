@@ -1,8 +1,10 @@
 import React from 'react'
 
-type Props = {}
+type Props = {
+    active: number;
+}
 
-const ShopSidebar = (props: Props) => {
+const ShopSidebar = ({active}: Props) => {
   return (
     <div>ShopSidebar</div>
   )
