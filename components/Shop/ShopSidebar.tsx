@@ -49,7 +49,15 @@ const sideBarItems=[
 ]
 const ShopSidebar = ({active}: Props) => {
   return (
-    <div>ShopSidebar</div>
+    <div>
+        {
+            sideBarItems.map((items,index)=>(
+                <div className='w-full mx-5 my-10' key={index}>
+
+                </div>
+                ))
+        }
+    </div>
   )
 }
 
