@@ -57,7 +57,7 @@ const ShopSidebar = ({active}: Props) => {
                    <Link href={items.href}>
                     <div className='flex items-center'>
                         <div className={`text-3xl ${active !== index ? "!text-white":"!text-[#858DFB]"}`}>
-                        
+                        {items.icon}
                         </div>
                     </div>
                    </Link>
