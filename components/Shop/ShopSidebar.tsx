@@ -5,6 +5,7 @@ import { BsWallet2 } from "react-icons/bs";
 import { LiaFileInvoiceDollarSolid } from "react-icons/lia";
 import { TbMoneybag } from "react-icons/tb";
 import { BiMoneyWithdraw } from "react-icons/bi";
+import Link from 'next/link';
 
 type Props = {
     active: number;
@@ -53,7 +54,11 @@ const ShopSidebar = ({active}: Props) => {
         {
             sideBarItems.map((items,index)=>(
                 <div className='w-full mx-5 my-10' key={index}>
-
+                   <Link href={items.href}>
+                    <div className='flex items-center'>
+                        
+                    </div>
+                   </Link>
                 </div>
                 ))
         }
