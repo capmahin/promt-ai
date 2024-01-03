@@ -56,7 +56,9 @@ const ShopSidebar = ({active}: Props) => {
                 <div className='w-full mx-5 my-10' key={index}>
                    <Link href={items.href}>
                     <div className='flex items-center'>
+                        <div className={`text-3xl ${active !== index ? "!text-white":"!text-[#858DFB]"}`}>
                         
+                        </div>
                     </div>
                    </Link>
                 </div>
