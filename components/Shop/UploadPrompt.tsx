@@ -7,8 +7,12 @@ const UploadPrompt = (props: Props) => {
   return (
     <div>
         <h1 className={`${styles.heading} text-center py-5`}>
-
+           Upload your Prompt
         </h1>
+        <br />
+       <form>
+        
+       </form>
     </div>
   )
 }
