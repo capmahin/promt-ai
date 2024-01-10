@@ -6,6 +6,7 @@ import { LiaFileInvoiceDollarSolid } from "react-icons/lia";
 import { TbMoneybag } from "react-icons/tb";
 import { BiMoneyWithdraw } from "react-icons/bi";
 import Link from 'next/link';
+import { styles } from '@/utils/styles';
 
 type Props = {
     active: number;
@@ -59,6 +60,11 @@ const ShopSidebar = ({active}: Props) => {
                         <div className={`text-3xl ${active !== index ? "!text-white":"!text-[#858DFB]"}`}>
                         {items.icon}
                         </div>
+                        <span
+                        className={`${styles.label} ${active !== index ? "!text-white":"!text-[#858DFB]"}`}
+                        >
+
+                        </span>
                     </div>
                    </Link>
                 </div>
