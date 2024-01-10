@@ -61,9 +61,9 @@ const ShopSidebar = ({active}: Props) => {
                         {items.icon}
                         </div>
                         <span
-                        className={`${styles.label} ${active !== index ? "!text-white":"!text-[#858DFB]"}`}
+                        className={`${styles.label} ${active !== index ? "!text-white":"!text-[#858DFB]"} pl-4`}
                         >
-
+                        {items.title}
                         </span>
                     </div>
                    </Link>
