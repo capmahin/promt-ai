@@ -1,6 +1,7 @@
 'use client';
 
-import ShopSidebar from "@/components/Shop/ShopSidebar"
+import ShopSidebar from "@/components/Shop/ShopSidebar";
+import UploadPrompt from "@/components/Shop/UploadPrompt";
 type Props = {}
 
 const Page = (props: Props) => {
@@ -10,7 +11,7 @@ const Page = (props: Props) => {
                 <ShopSidebar active={1}/>   
             </div>
             <div className="md:w-[80%] 2xl:w-[83%]">
-                  
+                  <UploadPrompt/>
             </div>
     </div>
   )
